@@ -67,7 +67,7 @@ python evaluate.py
 
 Jelaskan dataset yang digunakan:
 - Sumber data ( Kaggle)
-- Jumlah data ( Normal : 5000 , TBC : 5000)
+- Jumlah data ( Non Demented : 3000 , Very Mild Demented  : 3000, 3.	Mild Demented : 3000, 4.	Moderate Demented : 3000 )
 - Pembagian data (75/15/10)
 - Preprocessing yang dilakukan
 
@@ -82,13 +82,13 @@ Proyek ini menggunakan **MobileNetV2**, arsitektur CNN yang ringan dan efisien u
 
 | Metrik | Nilai |
 |--------|-------|
-| Accuracy | 1.00 |
-| Precision | 1.00 |
-| Recall | 1.00 |
-| F1-Score | 1.00 |
+| Accuracy | 0.97 |
+| Precision | 0.97 |
+| Recall | 0.97 |
+| F1-Score | 0.97 |
 
-| Test Accuracy : 0.9990 |
-| Test Loss : 0.1658 |
+| Test Accuracy : 0.9717 |
+| Test Loss : 0.1956 |
 
 *Update sesuai hasil training*
 
@@ -106,4 +106,4 @@ Silakan buat pull request atau issue jika ingin berkontribusi.
 
 ## 📄 Lisensi
 
-[Rafiq 23]
+[ADAM 25]
