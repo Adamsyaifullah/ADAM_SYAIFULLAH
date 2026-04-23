@@ -1,0 +1,41 @@
+============================================================
+INFORMASI SPLIT DATASET
+============================================================
+
+Tanggal: 2026-03-08 23:22:59
+
+KONFIGURASI SPLIT:
+  Train size : 75%
+  Val size   : 15%
+  Test size  : 10%
+
+DISTRIBUSI DATA:
+
+TRAIN:
+  MildDemented: 2250 gambar
+  ModerateDemented: 2250 gambar
+  NonDemented: 2250 gambar
+  VeryMildDemented: 2250 gambar
+  TOTAL: 9000 gambar
+
+VALIDATION:
+  MildDemented: 450 gambar
+  ModerateDemented: 450 gambar
+  NonDemented: 450 gambar
+  VeryMildDemented: 450 gambar
+  TOTAL: 1800 gambar
+
+TEST:
+  MildDemented: 300 gambar
+  ModerateDemented: 300 gambar
+  NonDemented: 300 gambar
+  VeryMildDemented: 300 gambar
+  TOTAL: 1200 gambar
+
+LABEL ENCODER:
+  0: MildDemented
+  1: ModerateDemented
+  2: NonDemented
+  3: VeryMildDemented
+
+============================================================

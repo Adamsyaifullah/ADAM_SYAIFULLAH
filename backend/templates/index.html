@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuroDetect | Deteksi Dini Alzheimer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <!-- Background Elements -->
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-orb orb-3"></div>
+    <div class="bg-grid"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <div class="logo-text">
+                    <span>Neuro<span>Detect</span></span>
+                    <small>AI Medical Diagnosis</small>
+                </div>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="active">🏠 Beranda</a>
+                <a href="#about">📖 Tentang</a>
+                <a href="#stages">📊 Tingkatan</a>
+                <a href="#detection">🔬 Deteksi</a>
+            </div>
+            <div class="system-status">
+                <div class="status-dot"></div>
+                <span>Sistem Siap</span>
+            </div>
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-microchip"></i> SISTEM DIAGNOSIS MEDIS
+                    <span class="badge-new">Akurasi Tinggi</span>
+                </div>
+                <h1>
+                    <span class="title-line">Deteksi Dini</span>
+                    <span class="title-gradient">Alzheimer's Disease</span>
+                    <span class="title-desc">Dengan Teknologi Kecerdasan Buatan</span>
+                </h1>
+                <p class="hero-description">Analisis citra MRI otak untuk mendeteksi 4 tingkat keparahan Alzheimer secara instan, akurat, dan mudah digunakan. Solusi diagnosis modern untuk deteksi dini yang lebih baik.</p>
+                <div class="stats-container">
+                    <div class="stat-card">
+                        <div class="stat-icon">🎯</div>
+                        <div class="stat-info">
+                            <h4>Akurasi Tinggi</h4>
+                            <p>Hasil Diagnosis Akurat</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">⚡</div>
+                        <div class="stat-info">
+                            <h4>Proses Cepat</h4>
+                            <p>Hasil Instan</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">🛡️</div>
+                        <div class="stat-info">
+                            <h4>Terpercaya</h4>
+                            <p>Teknologi Teruji</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#detection" class="btn-primary">
+                        <span>Mulai Deteksi</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#about" class="btn-outline">
+                        <i class="fas fa-play-circle"></i>
+                        <span>Pelajari</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="brain-container">
+                    <div class="brain-glow"></div>
+                    <div class="brain-core">
+                        <i class="fas fa-brain"></i>
+                        <div class="pulse-ring"></div>
+                        <div class="pulse-ring delay-1"></div>
+                    </div>
+                    <!-- FLOATING BADGES DIHAPUS -->
+                    <!-- DIGANTI DENGAN ANIMASI NEURAL PARTICLES -->
+                    <div class="neural-particles">
+                        <div class="neural-particle"></div>
+                        <div class="neural-particle"></div>
+                        <div class="neural-particle"></div>
+                        <div class="neural-particle"></div>
+                        <div class="neural-particle"></div>
+                        <div class="neural-particle"></div>
+                        <div class="neural-particle"></div>
+                        <div class="neural-particle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- GARIS TEPI BAWAH (WAVE DIVIDER) DIHAPUS -->
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">📖 TENTANG PENYAKIT</div>
+                <h2>Apa Itu <span class="gradient">Alzheimer</span>?</h2>
+                <p>Memahami penyakit untuk deteksi dini yang lebih baik</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <div class="highlight-box">
+                        <div class="highlight-icon">🧠</div>
+                        <p><strong>Alzheimer</strong> adalah penyakit otak progresif yang menyebabkan penurunan daya ingat, kemampuan berpikir, dan perubahan perilaku. Penyakit ini <strong>bukan bagian normal dari penuaan</strong> dan membutuhkan penanganan dini untuk memperlambat progresinya.</p>
+                    </div>
+                    <div class="fact-list">
+                        <div class="fact-item">
+                            <div class="fact-icon">📊</div>
+                            <div class="fact-content">
+                                <strong>55 Juta+ Penderita</strong>
+                                <span>Jumlah penderita Alzheimer di seluruh dunia</span>
+                            </div>
+                        </div>
+                        <div class="fact-item">
+                            <div class="fact-icon">⚠️</div>
+                            <div class="fact-content">
+                                <strong>60-70% Kasus Demensia</strong>
+                                <span>Alzheimer penyebab utama demensia global</span>
+                            </div>
+                        </div>
+                        <div class="fact-item">
+                            <div class="fact-icon">⏰</div>
+                            <div class="fact-content">
+                                <strong>Deteksi Dini</strong>
+                                <span>Kunci penanganan yang lebih optimal</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="symptoms-box">
+                    <h3><i class="fas fa-exclamation-triangle"></i> 7 Gejala yang Perlu Diwaspadai</h3>
+                    <div class="symptoms-list">
+                        <div class="symptom"><span>📝</span> Sering lupa kejadian baru</div>
+                        <div class="symptom"><span>🗣️</span> Kesulitan menemukan kata</div>
+                        <div class="symptom"><span>⏰</span> Bingung dengan waktu & tempat</div>
+                        <div class="symptom"><span>📍</span> Tersesat di tempat familiar</div>
+                        <div class="symptom"><span>😔</span> Perubahan mood & kepribadian</div>
+                        <div class="symptom"><span>🏠</span> Menarik diri dari sosial</div>
+                        <div class="symptom"><span>📋</span> Kesulitan merencanakan</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stages Section -->
+    <section id="stages" class="stages">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">📊 TINGKAT KEPARAHAN</div>
+                <h2>4 Tahap <span class="gradient">Perkembangan Alzheimer</span></h2>
+                <p>Semakin dini terdeteksi, semakin baik penanganannya</p>
+            </div>
+            <div class="stages-grid">
+                <div class="stage-card">
+                    <div class="stage-number">01</div>
+                    <div class="stage-icon">🧠</div>
+                    <h3>Non-Demented</h3>
+                    <div class="stage-badge green">Normal / Sehat</div>
+                    <p>Fungsi kognitif masih normal, tidak ada tanda-tanda gangguan memori. Masih bisa beraktivitas mandiri sepenuhnya.</p>
+                    <div class="stage-footer">✅ Kondisi: Sehat</div>
+                </div>
+                <div class="stage-card">
+                    <div class="stage-number">02</div>
+                    <div class="stage-icon">⚠️</div>
+                    <h3>Very Mild Demented</h3>
+                    <div class="stage-badge yellow">Sangat Ringan</div>
+                    <p>Gangguan kognitif ringan (MCI). Mulai ada keluhan lupa ringan namun masih dapat beraktivitas mandiri.</p>
+                    <div class="stage-footer">⚠️ Perlu Waspada</div>
+                </div>
+                <div class="stage-card">
+                    <div class="stage-number">03</div>
+                    <div class="stage-icon">🏥</div>
+                    <h3>Mild Demented</h3>
+                    <div class="stage-badge orange">Ringan</div>
+                    <p>Demensia tahap awal. Gangguan memori jelas, kesulitan tugas kompleks, membutuhkan pengawasan ringan.</p>
+                    <div class="stage-footer">🩺 Konsultasi Dokter</div>
+                </div>
+                <div class="stage-card">
+                    <div class="stage-number">04</div>
+                    <div class="stage-icon">🚨</div>
+                    <h3>Moderate Demented</h3>
+                    <div class="stage-badge red">Sedang</div>
+                    <p>Demensia tahap lanjut. Gangguan berat, membutuhkan bantuan dalam aktivitas sehari-hari.</p>
+                    <div class="stage-footer">🏥 Perawatan Intensif</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detection Section -->
+    <section id="detection" class="detection">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">🔬 DETEKSI DINI</div>
+                <h2>Upload <span class="gradient">MRI Scan</span></h2>
+                <p>Unggah citra otak Anda untuk analisis instan</p>
+            </div>
+            
+            <div class="detection-wrapper">
+                <!-- Upload Panel -->
+                <div class="upload-panel">
+                    <div class="panel-title">
+                        <div class="title-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                        <div>
+                            <h3>Upload Gambar MRI</h3>
+                            <p>Format JPG, PNG, JPEG • Maksimal 16MB</p>
+                        </div>
+                    </div>
+                    
+                    <div class="upload-box" id="uploadZone">
+                        <div class="upload-icon">
+                            <i class="fas fa-brain-arrow-up"></i>
+                            <div class="upload-ripple"></div>
+                        </div>
+                        <h4>Klik atau taruh file di sini</h4>
+                        <p>Seret & lepas file gambar MRI Anda</p>
+                        <div class="format-tags">
+                            <span>.JPG</span>
+                            <span>.PNG</span>
+                            <span>.JPEG</span>
+                        </div>
+                    </div>
+                    <input type="file" id="fileInput" accept=".jpg,.jpeg,.png" hidden>
+                    
+                    <div class="preview-area" id="preview">
+                        <div class="preview-head">
+                            <span><i class="fas fa-image"></i> Pratinjau Gambar</span>
+                            <button class="preview-close" id="removeBtn"><i class="fas fa-times"></i></button>
+                        </div>
+                        <img id="previewImg" alt="Preview">
+                        <div class="preview-footer" id="previewInfo"></div>
+                    </div>
+                    
+                    <button class="analyze-btn" id="analyzeBtn" onclick="predictImage()" disabled>
+                        <span class="btn-text">🔬 Analisis Gambar</span>
+                        <span class="btn-loader"><i class="fas fa-spinner fa-pulse"></i> Memproses...</span>
+                    </button>
+                </div>
+                
+                <!-- Result Panel -->
+                <div class="result-panel">
+                    <div class="panel-title">
+                        <div class="title-icon"><i class="fas fa-chart-line"></i></div>
+                        <div>
+                            <h3>Hasil Diagnosis</h3>
+                            <p>Hasil analisis oleh sistem</p>
+                        </div>
+                        <div class="result-badge">Hasil</div>
+                    </div>
+                    
+                    <div class="loading-state" id="loading">
+                        <div class="loading-spinner"></div>
+                        <p>Menganalisis gambar...</p>
+                        <small>Mohon tunggu sebentar</small>
+                    </div>
+                    
+                    <div class="error-state" id="error">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <p id="errorMsg"></p>
+                        <button onclick="closeError()" class="error-btn">Coba Lagi</button>
+                    </div>
+                    
+                    <div class="result-state" id="result">
+                        <div class="diagnosis-result">
+                            <div class="diagnosis-icon">🧠</div>
+                            <div class="diagnosis-name" id="diagnosis">-</div>
+                        </div>
+                        
+                        <div class="confidence-wrapper">
+                            <div class="confidence-head">
+                                <span>Tingkat Keyakinan</span>
+                                <span class="confidence-value" id="confidenceVal">-</span>
+                            </div>
+                            <div class="confidence-bar">
+                                <div class="confidence-fill" id="confidenceFill"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="probability-wrapper">
+                            <div class="probability-title">Kemungkinan per Kategori</div>
+                            <div class="probability-list" id="probabilities"></div>
+                        </div>
+                        
+                        <div class="recommendation-wrapper">
+                            <div class="rec-icon">💡</div>
+                            <div>
+                                <strong>Rekomendasi Medis</strong>
+                                <p id="recText">Hasil akan muncul setelah analisis</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <!-- <section class="cta">
+        <div class="container">
+            <div class="cta-card">
+                <div class="cta-icon">🚀</div>
+                <h2>Siap Melakukan Deteksi Dini?</h2>
+                <p>Gunakan sistem kami untuk analisis MRI otak secara instan dan akurat</p>
+                <a href="#detection" class="cta-button">
+                    <span>Mulai Deteksi Sekarang</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-brain"></i>
+                        <span>Neuro<span>Detect</span></span>
+                    </div>
+                    <p>Sistem deteksi dini Alzheimer berbasis AI untuk diagnosis yang lebih akurat dan cepat.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-col">
+                        <h4>Navigasi</h4>
+                        <a href="#home">Beranda</a>
+                        <a href="#about">Tentang</a>
+                        <a href="#stages">Tingkatan</a>
+                        <a href="#detection">Deteksi</a>
+                    </div>
+                    <div class="link-col">
+                        <h4>Sumber Daya</h4>
+                        <a href="#">Dokumentasi</a>
+                        <a href="#">Penelitian</a>
+                        <a href="#">Blog</a>
+                    </div>
+                    <div class="link-col">
+                        <h4>Kontak</h4>
+                        <a href="#">Email</a>
+                        <a href="#">GitHub</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 NeuroDetect | AI Medical Diagnosis System</p>
+                <p class="disclaimer">⚠️ Hasil diagnosis bersifat asistif. Konsultasikan dengan dokter spesialis untuk keputusan medis.</p>
+            </div>
+        </div>
+    </footer>
+
+    <svg style="position:absolute; width:0; height:0;">
+        <defs>
+            <linearGradient id="waveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#6366f1" stop-opacity="0.3"/>
+                <stop offset="50%" stop-color="#8b5cf6" stop-opacity="0.5"/>
+                <stop offset="100%" stop-color="#d946ef" stop-opacity="0.3"/>
+            </linearGradient>
+        </defs>
+    </svg>
+
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>
